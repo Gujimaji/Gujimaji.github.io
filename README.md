@@ -8,10 +8,10 @@ Website: https://gujimaji.github.io/
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | Biography, research, publications, updates and contact |
+| `index.html` | Compact biography, selected research/publication, education and contact |
 | `style.css` | Responsive light and dark themes |
 | `script.js` | Interactive illustration and copy controls |
-| `assets/` | Monogram favicon and WROP BibTeX citation |
+| `assets/` | Monogram, BibTeX citation and attributed official WROP task media; see assets/README.md |
 | `.nojekyll` | Serve static files directly with GitHub Pages |
 | `robots.txt` | Search indexing configuration |
 | `sitemap.xml` | Canonical homepage URL |
@@ -25,3 +25,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 ## Agent Activity Log
 
 - 2026-10-27 — Published the initial English academic homepage with WROP, responsive light/dark themes, an illustrative object-permanence interaction and citation/contact controls.
+
+- 2026-10-27 — Refocused the homepage for internship, research and graduate applications: compact biography, readable selected-research entry, official WROP visual, expandable overview and verified education. Retained co-first authorship without detailed individual-duty claims at the owner’s request. No unverified CV, portrait, roles, dates or achievements added.

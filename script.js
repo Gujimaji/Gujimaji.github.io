@@ -20,7 +20,7 @@ const reveal = document.querySelector('#reveal-path');
 const play = document.querySelector('#play-toggle');
 const icon = document.querySelector('#play-icon');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-let playing = !reducedMotion.matches;
+let playing = false;
 let progress = 12;
 let lastFrame = 0;
 function draw() {
@@ -40,7 +40,7 @@ play.addEventListener('click', () => { playing = !playing; syncPlay(); });
 timeline.addEventListener('input', () => { playing = false; progress = Number(timeline.value); syncPlay(); draw(); });
 reveal.addEventListener('change', draw);
 reducedMotion.addEventListener('change', () => { if(reducedMotion.matches) { playing = false; syncPlay(); } });
-const figure = document.querySelector('.hero-figure');
+const figure = document.querySelector('.concept-figure');
 let figureVisible = true;
 new IntersectionObserver(entries => { figureVisible = entries[0].isIntersecting; }).observe(figure);
 function frame(now) {
@@ -90,6 +90,7 @@ citationToggle.addEventListener('click', () => {
 document.querySelector('#copy-citation').addEventListener('click', async (event) => {
   const ok = await copyText(bibtex);
   event.target.textContent = ok ? 'Copied!' : 'Select the citation below';
+  document.querySelector('#citation-status').textContent = ok ? 'Citation copied.' : 'Select and copy the citation text.';
   setTimeout(() => { event.target.textContent = 'Copy citation'; }, 2200);
 });
 const sections = document.querySelectorAll('main > section[id]');
@@ -97,8 +98,14 @@ const navigationObserver = new IntersectionObserver(entries => {
   const entry = entries.find(item => item.isIntersecting);
   if (!entry) return;
   document.querySelectorAll('nav a').forEach(link => {
-    if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'true');
+    if (link.hash === '#' + (entry.target.id === 'interests' ? 'research' : entry.target.id)) link.setAttribute('aria-current', 'true');
     else link.removeAttribute('aria-current');
   });
 }, {rootMargin: '-10% 0px -65% 0px'});
 sections.forEach(section => navigationObserver.observe(section));
+
+const taskAnimation = document.querySelector('.project-animation');
+taskAnimation.addEventListener('toggle', () => {
+  const image = taskAnimation.querySelector('img');
+  if (taskAnimation.open && !image.getAttribute('src')) image.src = image.dataset.src;
+});
