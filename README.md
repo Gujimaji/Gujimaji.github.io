@@ -85,3 +85,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Applied owner-provided “During the study” introduction sentence and synchronized Chinese translation.
 
 - 2026-11-01 — Updated Research Interests to Foundation Models, Multimodal Reasoning, World Models, and Applied Mathematics; synchronized Chinese labels.
+
+- 2026-11-01 — Set Research Interests to Video Reasoning, World Models, Foundation Models, Applied Mathematics in owner-requested order; synchronized Chinese translation.
