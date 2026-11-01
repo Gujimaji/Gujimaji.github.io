@@ -117,3 +117,6 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 /* Keep each profile affiliation line intact at the existing type size. */
 .affiliation{max-width:none;white-space:nowrap}
 @media(min-width:1001px){.layout{grid-template-columns:300px minmax(0,1fr);column-gap:40px}}
+
+/* Restore main-column width while retaining the wider sidebar. */
+@media(min-width:1001px){.layout{max-width:1212px}}
