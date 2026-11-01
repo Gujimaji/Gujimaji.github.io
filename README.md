@@ -1,6 +1,6 @@
 # Haotian Zhang
 
-Personal academic website of Haotian Zhang, a first-year student in Applied and Computational Mathematics at the University of Southern California.
+Personal academic website of Haotian Zhang, an undergraduate at AUP in Fall 2026 and incoming USC student in Applied and Computational Mathematics in Spring 2027.
 
 Website: https://gujimaji.github.io/
 
@@ -33,3 +33,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Corrected Chinese name to 张昊天; set interests to Video Reasoning, World Models and Applied Mathematics in both languages; integrated owner-supplied portrait unchanged; matched reference Newsreader/Inter fonts, sidebar dimensions, publication media proportion and type hierarchy. Fonts bundled locally and embedded in standalone export.
 
 - 2026-11-01 — Owner approved publication of the portrait/font refinement to https://gujimaji.github.io/. Source/export consistency and JavaScript syntax verified before publication.
+
+- 2026-11-01 — Added Resume PDF link; corrected AUP August-December 2026 and incoming USC Spring 2027 across English/Chinese biography, sidebar, education and page metadata. Publication explicitly authorized.
