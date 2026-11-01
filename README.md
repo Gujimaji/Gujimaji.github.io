@@ -75,3 +75,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Matched Research overview and BibTeX disclosure labels to 14.4px author legend size.
 
 - 2026-11-01 — Matched disclosure font weight to author legend (400); enlarged profile affiliation to 16px with 1.5 line height. Reference profile uses 13.76px/500; increased size for requested readability in Newsreader.
+
+- 2026-11-01 — Widened desktop sidebar to 300px with 40px column gap; kept profile at 16px and each affiliation line unwrapped.

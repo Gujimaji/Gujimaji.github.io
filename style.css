@@ -113,3 +113,7 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 /* Consistent disclosure weight and more readable profile text. */
 .overview > summary,.citation > summary{font-weight:400}
 .affiliation{font-size:16px;line-height:1.5}
+
+/* Keep each profile affiliation line intact at the existing type size. */
+.affiliation{max-width:none;white-space:nowrap}
+@media(min-width:1001px){.layout{grid-template-columns:300px minmax(0,1fr);column-gap:40px}}
