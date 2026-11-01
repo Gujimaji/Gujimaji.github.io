@@ -55,3 +55,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Replaced duplicate WROP biography paragraph with concrete visual-reasoning research summary. Added asterisks to Haotian Zhang, Fengyuan Yu and Dezhi Luo, with exact paper footnote Core Team; retained owner-confirmed Co-first author badge.
 
 - 2026-11-01 — Owner requested uniform biography weight, research-interest rewrite, and Equal contribution / Corresponding author legend under Research. Added envelope to Hokin Deng per paper correspondence line. Equal-contribution wording follows owner instruction; paper v1 labels asterisks Core Team.
+
+- 2026-11-01 — Replaced interest-list biography with current research question and concrete work. Reduced legend to 10px with superscript symbols, referencing Maijunxian Wang site styling. Hokin Deng envelope now visible in both collapsed and expanded author lists; versioned resource URLs avoid stale browser styling.

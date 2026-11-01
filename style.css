@@ -77,3 +77,8 @@ footer{align-items:baseline;column-gap:20px;row-gap:8px}
 /* Uniform biography weight and research-wide authorship legend. */
 .intro,.intro p,.intro strong{font-weight:500}
 .author-legend{font:400 11px/1.5 var(--sans);color:var(--muted);margin:-5px 0 16px}
+
+/* Compact reference-style legend and visible corresponding author. */
+#research > .author-legend{font:400 10px/1.45 var(--sans);margin:-7px 0 13px;color:var(--muted)}
+.author-legend sup{font-size:8px;line-height:0;vertical-align:super}
+.corresponding-author{white-space:nowrap}
