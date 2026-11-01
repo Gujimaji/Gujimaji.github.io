@@ -47,3 +47,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Updated Resume AUP description to Visiting Student · USC Fall Semester in Paris; both PDF pages rendered and verified. Owner requested website PDF publication.
 
 - 2026-11-01 — Bolded all existing WROP resource-link labels (arXiv, Website, Code, Data, Model, Benchmark, Leaderboard); destinations preserved. Interpreted supplied VBVR labels as a styling reference to homepage resources.
+
+- 2026-11-01 — Broadened English/Chinese Contact text to research and internship opportunities in artificial intelligence, computer science, and mathematics, as requested.
