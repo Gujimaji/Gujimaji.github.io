@@ -83,3 +83,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Reduced desktop column gap to 24px; profile links now 16px to match affiliation; paper title enlarged to 19px.
 
 - 2026-11-01 — Applied owner-provided “During the study” introduction sentence and synchronized Chinese translation.
+
+- 2026-11-01 — Updated Research Interests to Foundation Models, Multimodal Reasoning, World Models, and Applied Mathematics; synchronized Chinese labels.
