@@ -1,111 +1,17 @@
-const root = document.documentElement;
-const themeButton = document.querySelector('.theme-toggle');
-function syncThemeLabel() {
-  const dark = root.dataset.theme === 'dark';
-  themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`);
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#1d231f' : '#f6f5f0';
-}
-syncThemeLabel();
-themeButton.addEventListener('click', () => {
-  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  try { localStorage.setItem('hz-theme', root.dataset.theme); } catch (_) {}
-  syncThemeLabel();
-});
-
-const timeline = document.querySelector('#timeline');
-const ball = document.querySelector('#moving-object');
-const ghost = document.querySelector('#ghost-object');
-const label = document.querySelector('#position-label');
-const reveal = document.querySelector('#reveal-path');
-const play = document.querySelector('#play-toggle');
-const icon = document.querySelector('#play-icon');
-const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-let playing = false;
-let progress = 12;
-let lastFrame = 0;
-function draw() {
-  const t = progress / 100;
-  const x = 65 + 390 * t;
-  const y = 248 - 114 * t * (1 - t);
-  const transform = `translate(${x.toFixed(2)} ${y.toFixed(2)})`;
-  ball.setAttribute('transform', transform);
-  ghost.setAttribute('transform', transform);
-  const occluded = x > 201 && x < 331;
-  ghost.setAttribute('opacity', reveal.checked && occluded ? '1' : '0');
-  timeline.value = progress;
-  label.textContent = `t = ${t.toFixed(2)}`;
-}
-function syncPlay() { play.setAttribute('aria-label', playing ? 'Pause demonstration' : 'Play demonstration'); icon.textContent = playing ? 'Ⅱ' : '▷'; }
-play.addEventListener('click', () => { playing = !playing; syncPlay(); });
-timeline.addEventListener('input', () => { playing = false; progress = Number(timeline.value); syncPlay(); draw(); });
-reveal.addEventListener('change', draw);
-reducedMotion.addEventListener('change', () => { if(reducedMotion.matches) { playing = false; syncPlay(); } });
-const figure = document.querySelector('.concept-figure');
-let figureVisible = true;
-new IntersectionObserver(entries => { figureVisible = entries[0].isIntersecting; }).observe(figure);
-function frame(now) {
-  if (lastFrame && playing && !document.hidden && figureVisible) {
-    progress = (progress + Math.min(now - lastFrame, 50) / 105) % 100;
-    draw();
-  }
-  lastFrame = now;
-  requestAnimationFrame(frame);
-}
-draw(); syncPlay(); requestAnimationFrame(frame);
-
-async function copyText(text) {
-  try { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; } } catch (_) {}
-  const area = document.createElement('textarea');
-  area.value = text;
-  area.style.cssText = 'position:fixed;left:-9999px;top:0';
-  document.body.appendChild(area);
-  area.select();
-  let ok = false;
-  try { ok = document.execCommand('copy'); } catch (_) {}
-  area.remove();
-  return ok;
-}
-document.querySelector('#copy-email').addEventListener('click', async () => {
-  const ok = await copyText('hzhang44@usc.edu');
-  document.querySelector('#copy-status').textContent = ok ? 'Email address copied.' : 'Please copy: hzhang44@usc.edu';
-});
-
-const bibtex = `@misc{zhang2026trainingobjectpermanenceworld,
-  title = {Training Object Permanence in World Models},
-  author = {Haotian Zhang and Fengyuan Yu and Dezhi Luo and Haoran Sun and Zehong Zhao and Qingying Gao and Yihan Li and Siyuan An and Huayi Qin and Yilan Zhang and Zhengze Jiang and Pinyuan Feng and Renrui Zhang and Ziyu Guo and Letian Wang and Mengyue Yang and Kangfu Mei and Maijunxian Wang and Ran Ji and Vikash Kumar and Freda Shi and Chandra Sripada and Vincent C. Muller and Philip Torr and Alan Yuille and Nikolaus Kriegeskorte and Felix Juefei-Xu and Lvmin Zhang and Jieneng Chen and Yilun Du and Hokin Deng},
-  year = {2026},
-  eprint = {2609.28654},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.AI},
-  url = {https://arxiv.org/abs/2609.28654}
-}`;
-document.querySelector('#citation-code').textContent = bibtex;
-const citationToggle = document.querySelector('#citation-toggle');
-citationToggle.addEventListener('click', () => {
-  const open = citationToggle.getAttribute('aria-expanded') !== 'true';
-  citationToggle.setAttribute('aria-expanded', String(open));
-  citationToggle.querySelector('span').textContent = open ? '−' : '+';
-  document.querySelector('#citation-panel').hidden = !open;
-});
-document.querySelector('#copy-citation').addEventListener('click', async (event) => {
-  const ok = await copyText(bibtex);
-  event.target.textContent = ok ? 'Copied!' : 'Select the citation below';
-  document.querySelector('#citation-status').textContent = ok ? 'Citation copied.' : 'Select and copy the citation text.';
-  setTimeout(() => { event.target.textContent = 'Copy citation'; }, 2200);
-});
-const sections = document.querySelectorAll('main > section[id]');
-const navigationObserver = new IntersectionObserver(entries => {
-  const entry = entries.find(item => item.isIntersecting);
-  if (!entry) return;
-  document.querySelectorAll('nav a').forEach(link => {
-    if (link.hash === '#' + (entry.target.id === 'interests' ? 'research' : entry.target.id)) link.setAttribute('aria-current', 'true');
-    else link.removeAttribute('aria-current');
-  });
-}, {rootMargin: '-10% 0px -65% 0px'});
-sections.forEach(section => navigationObserver.observe(section));
-
-const taskAnimation = document.querySelector('.project-animation');
-taskAnimation.addEventListener('toggle', () => {
-  const image = taskAnimation.querySelector('img');
-  if (taskAnimation.open && !image.getAttribute('src')) image.src = image.dataset.src;
-});
+const root=document.documentElement;
+const theme=document.querySelector('.theme-toggle');
+const language=document.querySelector('#language');
+let lang='en';
+const en={};document.querySelectorAll('[data-i18n]').forEach(e=>en[e.dataset.i18n]=e.innerHTML);
+const zh={affiliation:'本科生研究者<br>应用与计算数学<br>南加州大学',navResearch:'研究',navEducation:'教育',navContact:'联系',intro:'我是南加州大学<strong>应用与计算数学</strong>专业的大一本科生。我的研究兴趣包括<strong>视频推理、世界模型与应用数学</strong>。我关注模型如何通过视觉表征进行推理、预测不断变化的世界，以及对物体和物理交互保持一致的理解。',intro2:'我是 <a href="https://object-permanence.world/">Training Object Permanence in World Models（WROP）</a> 的共同第一作者。这项工作通过认知启发的任务、可规模化的合成数据与评估，研究视频生成模型中的物体恒存性和实体性。',researchTitle:'研究与预印本',viewImage:'查看任务示例 ↗',preprint:'预印本 · 2026',cofirst:'共同第一作者',award:'🤗 Hugging Face 每周论文第一名',showAuthors:'… 展开全部 31 位作者',summary:'视频模型能否记住暂时看不见的物体？WROP 研究模型能否在遮挡过程中保持物体身份，并遵守物体的实体性约束。',website:'项目主页',code:'代码',data:'数据',model:'模型',benchmark:'评测集',leaderboard:'排行榜',overview:'研究概览',overviewText:'WROP 包含 150 个认知启发的 3D 任务、150 万样本语料库、固定的 300 题测试集、人工评估框架，以及微调的 160 亿参数续帧模型 PWM-WROP。这些资源由论文作者团队共同完成。',animation:'查看官方任务动画',copyCitation:'复制引用',download:'下载 .bib',interests:'研究兴趣',world:'视频推理',physical:'世界模型',evaluation:'应用数学',education:'教育经历',usc:'南加州大学',degree:'应用与计算数学',year:'大一本科生',contact:'联系',contactText:'欢迎交流视频推理、世界模型与应用数学领域的研究合作与实习机会。',updated:'更新于 2026 年 11 月'};
+function syncTheme(){const dark=root.dataset.theme==='dark';theme.textContent=lang==='zh'?(dark?'浅色':'深色'):(dark?'Light':'Dark');theme.setAttribute('aria-pressed',String(dark));theme.setAttribute('aria-label',lang==='zh'?'切换明暗主题':'Toggle color theme');document.querySelector('meta[name="theme-color"]').content=dark?'#191c1a':'#fbfbf9'}
+theme.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('hz-theme',root.dataset.theme)}catch{}syncTheme()});
+function syncAuthors(){const expanded=document.querySelector('#authors-toggle').getAttribute('aria-expanded')==='true';document.querySelector('#authors-toggle').textContent=expanded?(lang==='zh'?'收起作者':'show fewer'):(lang==='zh'?zh.showAuthors:en.showAuthors)}
+language.addEventListener('click',()=>{lang=lang==='en'?'zh':'en';root.lang=lang==='zh'?'zh-CN':'en';document.querySelectorAll('[data-i18n]').forEach(e=>e.innerHTML=(lang==='zh'?zh:en)[e.dataset.i18n]);language.textContent=lang==='zh'?'English':'中文';syncAuthors();syncTheme()});
+document.querySelector('#authors-toggle').addEventListener('click',e=>{const open=e.currentTarget.getAttribute('aria-expanded')!=='true';e.currentTarget.setAttribute('aria-expanded',String(open));document.querySelector('#more-authors').hidden=!open;document.querySelector('#author-ellipsis').hidden=open;syncAuthors()});
+document.querySelector('#more-authors').textContent=', Yihan Li, Siyuan An, Huayi Qin, Yilan Zhang, Zhengze Jiang, Pinyuan Feng, Renrui Zhang, Ziyu Guo, Letian Wang, Mengyue Yang, Kangfu Mei, Maijunxian Wang, Ran Ji, Vikash Kumar, Freda Shi, Chandra Sripada, Vincent C. Müller, Philip Torr, Alan Yuille, Nikolaus Kriegeskorte, Felix Juefei-Xu, Lvmin Zhang, Jieneng Chen, Yilun Du, Hokin Deng.';
+const bibtex='@misc{zhang2026trainingobjectpermanenceworld,\n  title = {Training Object Permanence in World Models},\n  author = {Haotian Zhang and Fengyuan Yu and Dezhi Luo and Haoran Sun and Zehong Zhao and Qingying Gao and Yihan Li and Siyuan An and Huayi Qin and Yilan Zhang and Zhengze Jiang and Pinyuan Feng and Renrui Zhang and Ziyu Guo and Letian Wang and Mengyue Yang and Kangfu Mei and Maijunxian Wang and Ran Ji and Vikash Kumar and Freda Shi and Chandra Sripada and Vincent C. Muller and Philip Torr and Alan Yuille and Nikolaus Kriegeskorte and Felix Juefei-Xu and Lvmin Zhang and Jieneng Chen and Yilun Du and Hokin Deng},\n  year = {2026},\n  eprint = {2609.28654},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI},\n  url = {https://arxiv.org/abs/2609.28654}\n}\n';
+document.querySelector('#citation-code').textContent=bibtex;
+document.querySelector('#copy-citation').addEventListener('click',async()=>{let ok=false;try{await navigator.clipboard.writeText(bibtex);ok=true}catch{}document.querySelector('#copy-status').textContent=ok?(lang==='zh'?'已复制':'Copied!'):(lang==='zh'?'请选择下方文字复制，或下载引用文件。':'Select the text below or download the citation.');});
+const dialog=document.querySelector('#image-dialog');document.querySelector('#enlarge').addEventListener('click',()=>dialog.showModal());document.querySelector('#close-image').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+document.querySelector('.animation').addEventListener('toggle',e=>{const img=e.currentTarget.querySelector('img');if(e.currentTarget.open&&!img.src)img.src=img.dataset.src});syncTheme();

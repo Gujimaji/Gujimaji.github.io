@@ -2,6 +2,8 @@
 
 | File | Purpose / provenance |
 | --- | --- |
+| `profile.jpg` | Owner-supplied portrait, copied unchanged from Desktop/profile.jpg |
+| `inter-*.ttf`, `newsreader-*.ttf` | Google Fonts Inter and Newsreader, weights 400/500/600, locally bundled |
 | `favicon.svg` | Original HZ monogram |
 | `wrop.bib` | Complete WROP author citation |
 | `wrop-tasks.gif` | Official WROP task animation, copied without modification from the project repository |
@@ -16,3 +18,5 @@ Project media © 2026 Hokin Deng, CC BY-NC 4.0, under the project's published li
 ## Agent Activity Log
 
 - 2026-10-27 — Added attributed official WROP media and a static first-frame preview for the academic homepage.
+
+- 2026-11-01 — Corrected Chinese name to 张昊天; set interests to Video Reasoning, World Models and Applied Mathematics in both languages; integrated owner-supplied portrait unchanged; matched reference Newsreader/Inter fonts, sidebar dimensions, publication media proportion and type hierarchy. Fonts bundled locally and embedded in standalone export.

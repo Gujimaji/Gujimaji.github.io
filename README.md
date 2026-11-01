@@ -27,3 +27,9 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-10-27 — Published the initial English academic homepage with WROP, responsive light/dark themes, an illustrative object-permanence interaction and citation/contact controls.
 
 - 2026-10-27 — Refocused the homepage for internship, research and graduate applications: compact biography, readable selected-research entry, official WROP visual, expandable overview and verified education. Retained co-first authorship without detailed individual-duty claims at the owner’s request. No unverified CV, portrait, roles, dates or achievements added.
+
+- 2026-11-01 — Redesigned existing homepage after the supplied Maijunxian Wang reference: fixed profile sidebar, serif typography, compact WROP entry, bilingual content, theme switching, full authors, image dialog and BibTeX. JS syntax and browser interaction checks pass; 390px viewport has no horizontal overflow; no browser console errors. Local revision awaits publishing approval.
+
+- 2026-11-01 — Corrected Chinese name to 张昊天; set interests to Video Reasoning, World Models and Applied Mathematics in both languages; integrated owner-supplied portrait unchanged; matched reference Newsreader/Inter fonts, sidebar dimensions, publication media proportion and type hierarchy. Fonts bundled locally and embedded in standalone export.
+
+- 2026-11-01 — Owner approved publication of the portrait/font refinement to https://gujimaji.github.io/. Source/export consistency and JavaScript syntax verified before publication.
