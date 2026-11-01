@@ -45,3 +45,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Owner explicitly approved publication of the current homepage, retaining Visiting Student. Publish Research/AUP/footer-motto/icon refinements; source and deployment copy consistency verified.
 
 - 2026-11-01 — Updated Resume AUP description to Visiting Student · USC Fall Semester in Paris; both PDF pages rendered and verified. Owner requested website PDF publication.
+
+- 2026-11-01 — Bolded all existing WROP resource-link labels (arXiv, Website, Code, Data, Model, Benchmark, Leaderboard); destinations preserved. Interpreted supplied VBVR labels as a styling reference to homepage resources.

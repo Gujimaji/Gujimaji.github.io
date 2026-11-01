@@ -68,3 +68,5 @@ h2{font:600 13.12px/1.5 var(--sans);letter-spacing:1.57px;padding-bottom:8px;mar
 .profile-links .profile-icon{display:block;width:18px;height:18px;flex:0 0 18px;color:var(--muted)}
 footer{align-items:baseline;column-gap:20px;row-gap:8px}
 .footer-motto{font:400 15px/1.6 var(--serif)}
+
+.resource-links a{font-weight:600}
