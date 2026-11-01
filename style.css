@@ -86,3 +86,7 @@ footer{align-items:baseline;column-gap:20px;row-gap:8px}
 /* Match reference legend size; owner-supplied WROP video. */
 #research > .author-legend{font-size:0.78rem;line-height:1.5;margin:0 0 1.4em;font-weight:400}
 .project-video{display:block;width:100%;height:auto;border-radius:8px;background:#000}
+
+/* One typeface throughout the site, including controls and citation text. */
+html{--site-font:"Newsreader",Georgia,"Songti SC","Noto Serif CJK SC",serif;--serif:var(--site-font);--sans:var(--site-font)}
+body,body *{font-family:var(--site-font)!important}
