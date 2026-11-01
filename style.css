@@ -106,3 +106,6 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 .education{align-items:baseline}
 .education > span{white-space:nowrap;max-width:none;flex-shrink:0}
 #contact > a{font-size:17px;font-weight:500}
+
+/* Match disclosure labels to the authorship legend. */
+.overview > summary,.citation > summary{font-size:14.4px}

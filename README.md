@@ -71,3 +71,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Corrected task design grammar; restored reference-style normal-weight superscript star/envelope with spaced separator while retaining 14.4px legend text; education metadata now 16px; Contact email bold.
 
 - 2026-11-01 — Education metadata kept on one line and baseline-aligned with school names; narrow screens retain stacked layout. Contact email now matches paragraph at 17px/500 without bold emphasis.
+
+- 2026-11-01 — Matched Research overview and BibTeX disclosure labels to 14.4px author legend size.
