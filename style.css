@@ -101,3 +101,8 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 .author-legend sup{font-size:0.75em;font-weight:400;line-height:0;vertical-align:super;color:inherit}
 .education > span{font-size:16px}
 #contact > a{font-weight:600}
+
+/* Single-line education dates aligned with school headings. */
+.education{align-items:baseline}
+.education > span{white-space:nowrap;max-width:none;flex-shrink:0}
+#contact > a{font-size:17px;font-weight:500}
