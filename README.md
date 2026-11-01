@@ -61,3 +61,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Replaced WROP card image with owner-supplied `assets/2026-11-01_wrop-demo.mp4`, native playback controls, muted inline loop; corrected legend to reference size 0.78rem.
 
 - 2026-11-01 — Applied exact owner biography wording, unified all site text to Newsreader with CJK fallbacks, and made WROP video autoplay muted loop inline without controls.
+
+- 2026-11-01 — Added currently to research statement; opened Contact invitation to anyone interested in AI/computer science/mathematics; matched copyright and motto at 15px.

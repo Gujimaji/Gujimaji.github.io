@@ -90,3 +90,6 @@ footer{align-items:baseline;column-gap:20px;row-gap:8px}
 /* One typeface throughout the site, including controls and citation text. */
 html{--site-font:"Newsreader",Georgia,"Songti SC","Noto Serif CJK SC",serif;--serif:var(--site-font);--sans:var(--site-font)}
 body,body *{font-family:var(--site-font)!important}
+
+/* Match copyright and motto text sizes. */
+footer,footer .footer-motto{font-size:15px;line-height:1.6}
