@@ -73,3 +73,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Education metadata kept on one line and baseline-aligned with school names; narrow screens retain stacked layout. Contact email now matches paragraph at 17px/500 without bold emphasis.
 
 - 2026-11-01 — Matched Research overview and BibTeX disclosure labels to 14.4px author legend size.
+
+- 2026-11-01 — Matched disclosure font weight to author legend (400); enlarged profile affiliation to 16px with 1.5 line height. Reference profile uses 13.76px/500; increased size for requested readability in Newsreader.

@@ -109,3 +109,7 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 
 /* Match disclosure labels to the authorship legend. */
 .overview > summary,.citation > summary{font-size:14.4px}
+
+/* Consistent disclosure weight and more readable profile text. */
+.overview > summary,.citation > summary{font-weight:400}
+.affiliation{font-size:16px;line-height:1.5}
