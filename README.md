@@ -37,3 +37,9 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Added Resume PDF link; corrected AUP August-December 2026 and incoming USC Spring 2027 across English/Chinese biography, sidebar, education and page metadata. Publication explicitly authorized.
 
 - 2026-11-01 — Per owner correction, restored all public homepage content to 1a40765; retained only Resume link, label translation, minimal link styling and PDF. Exact source comparison verifies no other homepage changes.
+
+- 2026-11-01 — Completed six requested homepage refinements locally: Research heading, AUP August–December 2026 education, bold Hugging Face honor, original motto with Chinese translation, removed sidebar section links and footer update date. Browser verified English/Chinese rendering; mobile screenshot saved. Awaiting explicit publishing approval.
+
+- 2026-11-01 — Moved approved sensibility motto after copyright; identified AUP as Visiting Student · USC Fall Semester in Paris (August–December 2026), based on official AUP program description and owner clarification. Replaced all six sidebar glyphs with official Font Awesome SVGs, matching CV icon family and uniform 18px alignment. English/Chinese and desktop/mobile browser checks pass; source/dist/offline export synchronized. Local only.
+
+- 2026-11-01 — Owner explicitly approved publication of the current homepage, retaining Visiting Student. Publish Research/AUP/footer-motto/icon refinements; source and deployment copy consistency verified.
