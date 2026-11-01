@@ -30,3 +30,5 @@ Project media © 2026 Hokin Deng, CC BY-NC 4.0, under the project's published li
 - 2026-11-01 — Replaced WROP card image with owner-supplied `assets/2026-11-01_wrop-demo.mp4`, native playback controls, muted inline loop; corrected legend to reference size 0.78rem.
 
 - 2026-11-01 — Applied all eight requested CV refinements: email 10.46pt, four current research interests, Honors and Awards heading, removed HiMCM, equal-contribution stars and paraphrased note, Hippocampal name, bold WROP co-first/core-team role with June-September 2026 dates, Science Internship Program. Rendered and visually verified both pages; website PDF replaced.
+
+- 2026-11-01 — Shortened publication legend to “* Equal contribution.” and switched WROP co-first/core-team role to regular italic. Both PDF pages visually verified.

@@ -89,3 +89,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Set Research Interests to Video Reasoning, World Models, Foundation Models, Applied Mathematics in owner-requested order; synchronized Chinese translation.
 
 - 2026-11-01 — Applied all eight requested CV refinements: email 10.46pt, four current research interests, Honors and Awards heading, removed HiMCM, equal-contribution stars and paraphrased note, Hippocampal name, bold WROP co-first/core-team role with June-September 2026 dates, Science Internship Program. Rendered and visually verified both pages; website PDF replaced.
+
+- 2026-11-01 — Shortened publication legend to “* Equal contribution.” and switched WROP co-first/core-team role to regular italic. Both PDF pages visually verified.
