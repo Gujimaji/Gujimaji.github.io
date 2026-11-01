@@ -67,3 +67,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Rephrased Contact as two welcoming sentences without an em dash. Kept reference 0.78rem legend text; removed 8px marker override so star/envelope use full legend size and stronger contrast.
 
 - 2026-11-01 — Matched entire authorship legend to author-name size 14.4px. Contact now uses owner-requested collaborate on research wording; Chinese synchronized.
+
+- 2026-11-01 — Corrected task design grammar; restored reference-style normal-weight superscript star/envelope with spaced separator while retaining 14.4px legend text; education metadata now 16px; Contact email bold.

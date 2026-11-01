@@ -96,3 +96,8 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 
 /* Match the entire authorship legend to author-name size. */
 #research > .author-legend{font-size:14.4px}
+
+/* Reference author symbols; readable education metadata and bold email. */
+.author-legend sup{font-size:0.75em;font-weight:400;line-height:0;vertical-align:super;color:inherit}
+.education > span{font-size:16px}
+#contact > a{font-weight:600}
