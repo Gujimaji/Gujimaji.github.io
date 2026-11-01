@@ -82,3 +82,7 @@ footer{align-items:baseline;column-gap:20px;row-gap:8px}
 #research > .author-legend{font:400 10px/1.45 var(--sans);margin:-7px 0 13px;color:var(--muted)}
 .author-legend sup{font-size:8px;line-height:0;vertical-align:super}
 .corresponding-author{white-space:nowrap}
+
+/* Match reference legend size; owner-supplied WROP video. */
+#research > .author-legend{font-size:0.78rem;line-height:1.5;margin:0 0 1.4em;font-weight:400}
+.project-video{display:block;width:100%;height:auto;border-radius:8px;background:#000}

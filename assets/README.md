@@ -2,6 +2,7 @@
 
 | File | Purpose / provenance |
 | --- | --- |
+| `2026-11-01_wrop-demo.mp4` | Owner-supplied WROP demonstration video, original bytes preserved |
 | `Haotian_Zhang_Resume.pdf` | Owner-approved two-page CV with corrected AUP/USC dates |
 | `profile.jpg` | Owner-supplied portrait, copied unchanged from Desktop/profile.jpg |
 | `inter-*.ttf`, `newsreader-*.ttf` | Google Fonts Inter and Newsreader, weights 400/500/600, locally bundled |
@@ -25,3 +26,5 @@ Project media © 2026 Hokin Deng, CC BY-NC 4.0, under the project's published li
 - 2026-11-01 — Added Resume PDF link; corrected AUP August-December 2026 and incoming USC Spring 2027 across English/Chinese biography, sidebar, education and page metadata. Publication explicitly authorized.
 
 - 2026-11-01 — Updated Resume AUP description to Visiting Student · USC Fall Semester in Paris; both PDF pages rendered and verified. Owner requested website PDF publication.
+
+- 2026-11-01 — Replaced WROP card image with owner-supplied `assets/2026-11-01_wrop-demo.mp4`, native playback controls, muted inline loop; corrected legend to reference size 0.78rem.
