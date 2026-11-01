@@ -93,3 +93,6 @@ body,body *{font-family:var(--site-font)!important}
 
 /* Match copyright and motto text sizes. */
 footer,footer .footer-motto{font-size:15px;line-height:1.6}
+
+/* Match the entire authorship legend to author-name size. */
+#research > .author-legend{font-size:14.4px}
