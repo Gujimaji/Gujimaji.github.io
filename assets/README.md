@@ -28,3 +28,5 @@ Project media © 2026 Hokin Deng, CC BY-NC 4.0, under the project's published li
 - 2026-11-01 — Updated Resume AUP description to Visiting Student · USC Fall Semester in Paris; both PDF pages rendered and verified. Owner requested website PDF publication.
 
 - 2026-11-01 — Replaced WROP card image with owner-supplied `assets/2026-11-01_wrop-demo.mp4`, native playback controls, muted inline loop; corrected legend to reference size 0.78rem.
+
+- 2026-11-01 — Applied all eight requested CV refinements: email 10.46pt, four current research interests, Honors and Awards heading, removed HiMCM, equal-contribution stars and paraphrased note, Hippocampal name, bold WROP co-first/core-team role with June-September 2026 dates, Science Internship Program. Rendered and visually verified both pages; website PDF replaced.
