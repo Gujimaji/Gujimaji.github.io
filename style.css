@@ -120,3 +120,8 @@ footer,footer .footer-motto{font-size:15px;line-height:1.6}
 
 /* Restore main-column width while retaining the wider sidebar. */
 @media(min-width:1001px){.layout{max-width:1212px}}
+
+/* Tighter columns and clearer profile links and paper title. */
+@media(min-width:1001px){.layout{column-gap:24px}}
+.profile-links{font-size:16px}
+.paper h3{font-size:19px}

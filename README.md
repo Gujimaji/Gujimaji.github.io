@@ -79,3 +79,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Widened desktop sidebar to 300px with 40px column gap; kept profile at 16px and each affiliation line unwrapped.
 
 - 2026-11-01 — Increased desktop layout maximum width from 1180px to 1212px, restoring the original main-column width alongside the 300px sidebar.
+
+- 2026-11-01 — Reduced desktop column gap to 24px; profile links now 16px to match affiliation; paper title enlarged to 19px.
