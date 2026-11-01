@@ -43,3 +43,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Moved approved sensibility motto after copyright; identified AUP as Visiting Student · USC Fall Semester in Paris (August–December 2026), based on official AUP program description and owner clarification. Replaced all six sidebar glyphs with official Font Awesome SVGs, matching CV icon family and uniform 18px alignment. English/Chinese and desktop/mobile browser checks pass; source/dist/offline export synchronized. Local only.
 
 - 2026-11-01 — Owner explicitly approved publication of the current homepage, retaining Visiting Student. Publish Research/AUP/footer-motto/icon refinements; source and deployment copy consistency verified.
+
+- 2026-11-01 — Updated Resume AUP description to Visiting Student · USC Fall Semester in Paris; both PDF pages rendered and verified. Owner requested website PDF publication.
