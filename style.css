@@ -70,3 +70,6 @@ footer{align-items:baseline;column-gap:20px;row-gap:8px}
 .footer-motto{font:400 15px/1.6 var(--serif)}
 
 .resource-links a{font-weight:600}
+
+.authors sup{font-size:.75em;line-height:0;vertical-align:super}
+.author-note{font:400 11px/1.5 var(--sans);color:var(--muted);margin-top:5px!important}
