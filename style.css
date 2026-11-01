@@ -80,7 +80,7 @@ footer{align-items:baseline;column-gap:20px;row-gap:8px}
 
 /* Compact reference-style legend and visible corresponding author. */
 #research > .author-legend{font:400 10px/1.45 var(--sans);margin:-7px 0 13px;color:var(--muted)}
-.author-legend sup{font-size:8px;line-height:0;vertical-align:super}
+.author-legend sup{font-size:1em;font-weight:600;line-height:1;vertical-align:baseline;color:var(--text)}
 .corresponding-author{white-space:nowrap}
 
 /* Match reference legend size; owner-supplied WROP video. */
