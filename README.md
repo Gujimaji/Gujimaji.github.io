@@ -91,3 +91,5 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-01 — Applied all eight requested CV refinements: email 10.46pt, four current research interests, Honors and Awards heading, removed HiMCM, equal-contribution stars and paraphrased note, Hippocampal name, bold WROP co-first/core-team role with June-September 2026 dates, Science Internship Program. Rendered and visually verified both pages; website PDF replaced.
 
 - 2026-11-01 — Shortened publication legend to “* Equal contribution.” and switched WROP co-first/core-team role to regular italic. Both PDF pages visually verified.
+
+- 2026-11-04 — Applied owner-approved English biography and Chinese translation; publication explicitly authorized. Preserved latest resume and Paper of the Day corrections.
