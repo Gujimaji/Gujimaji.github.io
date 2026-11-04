@@ -32,3 +32,5 @@ Project media © 2026 Hokin Deng, CC BY-NC 4.0, under the project's published li
 - 2026-11-01 — Applied all eight requested CV refinements: email 10.46pt, four current research interests, Honors and Awards heading, removed HiMCM, equal-contribution stars and paraphrased note, Hippocampal name, bold WROP co-first/core-team role with June-September 2026 dates, Science Internship Program. Rendered and visually verified both pages; website PDF replaced.
 
 - 2026-11-01 — Shortened publication legend to “* Equal contribution.” and switched WROP co-first/core-team role to regular italic. Both PDF pages visually verified.
+
+- 2026-11-04 — Synchronized Resume research paragraph with approved English/Chinese homepage wording; PDF remains two pages, eight links and all other text preserved.
