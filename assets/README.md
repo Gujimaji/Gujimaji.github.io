@@ -34,3 +34,7 @@ Project media © 2026 Hokin Deng, CC BY-NC 4.0, under the project's published li
 - 2026-11-01 — Shortened publication legend to “* Equal contribution.” and switched WROP co-first/core-team role to regular italic. Both PDF pages visually verified.
 
 - 2026-11-04 — Synchronized Resume research paragraph with approved English/Chinese homepage wording; PDF remains two pages, eight links and all other text preserved.
+
+- 2026-11-06 — Swapped Berkeley/Yau awards; revised three WROP bullets from owner-provided contributions with grammatical refinement of Hugging Face recognition. Two-page PDF visually checked, eight links retained. Local website PDF synchronized; publication pending explicit approval.
+
+- 2026-11-06 — Owner explicitly approved publication of the revised Resume; publishing the reviewed PDF with Berkeley/Yau order swap and updated WROP contributions.

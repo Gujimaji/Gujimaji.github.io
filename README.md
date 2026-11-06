@@ -95,3 +95,7 @@ GitHub Pages publishes the root of the `main` branch. Changes pushed to that bra
 - 2026-11-04 — Applied owner-approved English biography and Chinese translation; publication explicitly authorized. Preserved latest resume and Paper of the Day corrections.
 
 - 2026-11-04 — Synchronized Resume research paragraph with approved English/Chinese homepage wording; PDF remains two pages, eight links and all other text preserved.
+
+- 2026-11-06 — Swapped Berkeley/Yau awards; revised three WROP bullets from owner-provided contributions with grammatical refinement of Hugging Face recognition. Two-page PDF visually checked, eight links retained. Local website PDF synchronized; publication pending explicit approval.
+
+- 2026-11-06 — Owner explicitly approved publication of the revised Resume; publishing the reviewed PDF with Berkeley/Yau order swap and updated WROP contributions.
